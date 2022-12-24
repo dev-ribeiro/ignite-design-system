@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextInput, TextInputProps } from '@ignite-ui/react'
+import { Box, TextInput, TextInputProps } from '@ignite-ui/react'
 
 export default {
   title: 'Form/TextInput',
@@ -7,8 +7,15 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box as="label">
-          <Text size="sm">Email address</Text>
+        <Box
+          as="label"
+          css={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '$2',
+          }}
+        >
           {Story()}
         </Box>
       )
