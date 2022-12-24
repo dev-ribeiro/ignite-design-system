@@ -7,6 +7,12 @@ export default {
   args: {
     children: 'Este é um título h2.',
   },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      control: 'inline-radio',
+    },
+  },
 } as Meta<HeadingProps>
 
 export const Primary: StoryObj<HeadingProps> = {}

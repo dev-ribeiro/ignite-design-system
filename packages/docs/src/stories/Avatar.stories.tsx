@@ -8,6 +8,11 @@ export default {
     src: 'https://github.com/dev-ribeiro.png',
     alt: 'David Ribeiro',
   },
+  argTypes: {
+    src: {
+      control: { type: 'text' },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
