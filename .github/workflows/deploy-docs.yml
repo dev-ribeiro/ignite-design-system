@@ -19,6 +19,9 @@ jobs:
             -   run: npm ci
 
             -   run: npm run build
+                env:
+                    TURBO_TOKEN: S3BQLxUAiCmD58nrmF9yMq4T
+                    TURBO_TEAM: dev-ribeiro-ignite-ui
 
             -   name: Deploy storybook
                 working-directory: ./packages/docs
